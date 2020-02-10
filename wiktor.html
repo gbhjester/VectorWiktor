@@ -31,7 +31,7 @@
 	    [% END %]
         <div id="bodyContent">
             <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
-				[% IF page.basename == "Catalog" %]
+				[% IF page.basename == "Index" %]	<!-- "Catalog" -->
 	                [% index(navigation.home,False) %]
                 [% ELSE %]<!-- NOTE ToC generated links are NOT STABLE. Zim does not currently support fragment links ~jes -->
                           <div class="js-toc"><span><pre>Table of Contents<ul>[% FOR sub IN page.headings(3) %][% IF sub.level==1 and sub.heading!=None %]<li><a href="#[% sub.heading %][% len(sub.content) %]1[% sub.content.count("e") %]">[% sub.heading %]</a></li>[% END %][% IF sub.level==2 and sub.heading!=None %]<ul><li><a href="#[% sub.heading %][% len(sub.content) %]1[% sub.content.count("e") %]">[% sub.heading %]</a></li></ul>[% END %]<!--[ IF sub.level==3 and sub.heading!=None %]<ul><ul><li><a href="#[% sub.heading %][% len(sub.content) %]1[% sub.content.count("e") %]">[% sub.heading %]</a></li></ul></ul>[ END %]-->[% END %]</ul></pre></span></div>

@@ -30,6 +30,7 @@
     h1,
     h2,
     h3,
+	h4,
     h5 {
         font-weight: bold
     }
@@ -80,6 +81,7 @@
     }
     h2,
     h3,
+	h4,
     h5 {
         page-break-after: avoid
     }
@@ -144,6 +146,7 @@
     h1,
     h2,
     h3,
+	h4,
     h5 {
         color: black;
         background: none;
@@ -166,17 +169,26 @@
         border-bottom: 1px dashed #aaa;
         font-weight: bold
     }
+    h4 {
+        /* border-bottom: none; */
+        border-bottom: 1px solid #aaa;
+        font-weight: bold
+    }
     h3 {
         font-size: 132%
     }
+    h4 {
+        font-size: 124%
+    }
     h5 {
-        font-size: 108%
+        font-size: 112%
     }
     h1,
     h2 {
         margin-bottom: .6em
     }
     h3,
+	h4,
     h5 {
         margin-bottom: .3em
     }
